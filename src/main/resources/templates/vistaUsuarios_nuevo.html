@@ -54,7 +54,7 @@
         <td th:text="${Usuarios.nombres}"></td>
         <td th:text="${Usuarios.apellidos}"></td>
         <!-- Condicional de email -->
-        <td th:if="${Usuarios.correo==''}" th:text="${'No email'}"></td>
+        <td th:if="${Usuarios.correo==null}" th:text="${'No email'}"></td>
         <td th:if="${Usuarios.correo}" th:text="${Usuarios.correo}"></td>
       
 
